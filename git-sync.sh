@@ -57,7 +57,6 @@ else
 		git commit -m \
 			"Overleaf synced at $(date -u +"%Y-%m-%d %H:%M:%S")" >/dev/null
 	fi
-
 fi
 
 echo
