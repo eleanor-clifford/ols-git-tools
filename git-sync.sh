@@ -16,15 +16,14 @@ if ! [ "$(git diff HEAD)" = "" ]; then
 fi
 
 # We want the overleaf branch to be based on the state of this branch, so it's
-# easiest to just delete it if it exists. Git will warn the user if there are
-# changes on the overleaf branch.
+# easiest to just delete it if it exists.
 if git branch | grep -q overleaf; then
-	echo -n "Please ensure that there are no important commits on the overleaf "
-	echo "branch, they will be destroyed."
+	echo -n "Please ensure that there are no important commits or staged "
+	echo    "changes on the overleaf branch, they will be destroyed."
 	read -p "Proceed? (y/n) " yn
 	case yn in
 		[Yy]* )
-			if ! git branch -d overleaf; then
+			if ! git branch -D overleaf; then
 				exit 1
 			fi
 			;;
