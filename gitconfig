@@ -1,0 +1,3 @@
+#vi: set ft=gitconfig
+[alias]
+	sync = !sh ols-git-tools/git-sync.sh
