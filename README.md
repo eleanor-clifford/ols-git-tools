@@ -1,3 +1,9 @@
+
+
+| :exclamation:  | This is a mirror of [https://git.sr.ht/~ecc/ols-git-tools](https://git.sr.ht/~ecc/ols-git-tools). Please refrain from using GitHub's issue and PR system.  |
+|----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
 # Overleaf Git Tools
 
 Provides integration with git for syncing overleaf projects with
